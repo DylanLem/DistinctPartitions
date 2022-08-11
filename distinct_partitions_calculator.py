@@ -4,14 +4,14 @@ are there to represent an integer as a sum of unique integers?"
 
 For example if we want to find the answer for 6, we have
 
-            6
+            6 + 0
             5 + 1
             4 + 2
             ------
   (illegal example: 3 + 3)
 
 
-We have two possible combinations, so the answer of q(6) is 3.
+We have three possible combinations, so the answer of q(6) is 3.
 
 
     There is a generating function for calculating q(n), a modified version of
@@ -37,7 +37,7 @@ We use 0 because in this context its better to look at 1 as x^0
 
 """
 
-# Encoded partition info showing only exponent/coeffients for current expanded sum!
+# Encoded partition info showing only exponent/coeffients for current expanded sum
 # initialize our dictionary of n=3 using the tuples concept ([0,1][0,2][0,3])
 # in full form it would look like x + x^2 + 2x^3 + x^4 + x^5 + x^6
 # [exponent, coefficient]
